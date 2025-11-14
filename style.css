@@ -514,3 +514,9 @@
 .subirmenos:hover{
     transform: translateY(-4px);
 }
+.aumentarmenosainda{
+    transition-duration: 0.3s;
+}
+.aumentarmenosainda:hover{
+    transform: scale(1.05);
+}
