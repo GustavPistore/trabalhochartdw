@@ -1,0 +1,516 @@
+*{
+    padding: 0;margin:0;box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --roxo: #862bbe;
+    --branco: rgb(245, 245, 245);
+}
+.content{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 0.7fr 10fr 3fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "esq1 cim dir"
+    "esq2 cor dir";
+}
+.esquerda1{
+    grid-area: esq1;
+    background-color: var(--branco);
+    border-right: 2px solid rgb(211, 216, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda2{
+    grid-area: esq2;
+    background-color: var(--branco);
+    border-right: 2px solid rgb(211, 216, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cima{
+    display: grid;
+    grid-area: cim;
+    background-color: rgb(241, 239, 241);
+    border-bottom: 2px solid rgb(211, 216, 221);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cimacima" "cimabaixo";
+}
+.botmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.botmenu:hover{
+    cursor: pointer;
+}
+.botgrid{
+    padding: 2px;
+    border-right: var(--roxo) solid 2px;
+
+}
+.roxo{
+    color: var(--roxo);
+    font-size: 32px;
+}
+.botcasa,.botlamp,.botslide,.botchart,.boteng,.botgrid{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.icons:hover{
+    cursor: pointer;
+}
+.bots{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    color:#adadad;font-size: 32px;
+}
+.cimacima{
+    grid-area: cimacima;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.tvlounge{
+    font-weight: bold;
+    font-size: 20px;
+}
+.temperature{
+    font-size: 20px;
+    color: #8a8a8a;
+}
+.cimabaixo{
+    padding: 0 20px;
+    grid-area: cimabaixo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cimaesq{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.setinha{
+    font-size: 20px;
+    color: #8a8a8a;
+}
+.iconmaior{
+    font-size: 46px;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+.tvlounge:hover {
+    cursor: pointer;
+}
+.cimabaixodir{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.direita{
+    display: grid;
+    grid-area: dir;
+    background-color: var(--branco);
+    border-left: 2px solid rgb(211, 216, 221);
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+    "dircima"
+    "dirbaixo";
+}
+.dircima{
+    margin-top: 20px;
+    grid-area: dircima;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.dirbaixo{
+    grid-area: dirbaixo;
+}
+.foto{
+    width: 45px;
+    height: 45px;
+    background-image: url('src/davibrito.webp');
+    border-radius: 20%;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+.nome{
+    font-weight: bold;
+    font-size: 16px;
+}
+.plano{
+    font-size: 12px;
+    color: #8a8a8a;
+}
+.iconss{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.iconmenor{
+    font-size: 24px;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+.livingg{
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #8a8a8a;
+
+}
+.livingg:hover{
+    cursor: pointer;
+}
+.living{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.foto2{
+    margin: auto;
+    width: 90%;
+    height: 25%;
+    border-radius: 7%;
+    background-image: url('src/living-room.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.presets{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.escrito{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.pressets{
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #8a8a8a;
+}
+.presetbut{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    height: 65%;
+    align-self: flex-end;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "but1 but2 but3 but4";
+    gap: 15px;
+}
+
+.but1,.but2,.but3,.but4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 235, 236);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+.but2{
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 32px;
+}
+.rooms{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 18px;
+}
+.rooms:hover{
+    cursor: pointer;
+}
+.roomss{
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #8a8a8a;
+}
+.escritoo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.entrance,.backyard,.bedroom,.livingroom,.hallway{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #8a8a8a;
+    gap: 10px;
+}
+.corpo{
+    grid-area: cor;
+    background-color: rgb(236, 235, 236);
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1.2fr;
+    grid-template-areas:
+    "pt1 pt2"
+    "pt3 pt3";
+}
+.pt1{
+    grid-area: pt1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pt2{
+    grid-area: pt2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pt3{
+    grid-area: pt3;
+
+}
+.devicess{
+    font-weight: bold;
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-left: 8%;
+    align-self: flex-start;
+}
+.devicebut{
+    width: 85%;
+    height: 80%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "devicebut1 devicebut2 devicebut3 devicebut4 devicebut5";
+}
+.device{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.devicebut1, .devicebut2, .devicebut3, .devicebut4, .devicebut5 {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15%;
+}
+.devicebut1{
+    grid-area: devicebut1;
+    background-color: #3d0d5b;
+}
+.db11{
+    display: flex;
+    justify-content: space-between;
+
+}
+.db12{
+    color: #adadad;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    font-weight: 700;
+}
+.white{
+    color: white;
+}
+.butz{
+    margin: 10px;
+    font-size: 24px;
+}
+.purp{
+    color: var(--roxo);
+}
+.buty{
+    margin: 10px;
+    font-size: 30px;
+}
+.black{
+    color: black;
+}
+.corpodir{
+    width: 70%;
+    height: 90%;
+}
+.dvcs{
+    height: 8%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.devicesss{
+    font-weight: bold;
+    font-size: 16px;
+    color: #8a8a8a;
+}
+.botoes{
+    width: 100%;
+    height: 42%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+    "btt1 btt2 btt3 btt4"
+    "btt5 btt6 btt7 btt8";
+}
+.btt1, .btt2, .btt3, .btt4, .btt5, .btt6{
+    background-color: var(--branco);
+    border-radius: 15%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btt7{
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #adadad;
+}
+.lastdays{
+    margin-top: 10px;
+    width: 100%;
+    height: 8%;
+    margin-bottom: 0;
+}
+.horarios{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horarios2{
+    width: 100%;
+    height: 60%;
+    display: grid ;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "hora1 espp hora2";
+}
+.espp{
+    grid-area: espp;
+    color: #a648e0;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+.hora1, .hora2{
+    color: #a648e0;
+    background-color: #ae4fe931;
+    font-weight: bold;
+    font-size: 14px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+
+}
+.hora1:hover, .hora2:hover{
+    cursor: pointer;
+}
+.hora1{
+    grid-area: hora1;
+}
+.hora2{
+    grid-area: hora2;
+
+}
+.chart2{
+    width: 70%;
+    height: 70%;
+}
+.corpoesq{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    width: 70%;
+    height: 90%;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+.subir{
+    transition-duration: 0.5s;
+}
+.subir:hover{
+    transform: translateY(-6px);
+}
+.aumentar{
+    transition-duration: 0.3s;
+}
+.aumentar:hover{
+    transform: scale(1.2);
+}
+.aumentarmenos{
+    transition-duration: 0.3s;
+}
+.aumentarmenos:hover{
+    transform: scale(1.1);
+}
+.subirmenos{
+    transition-duration: 0.3s;
+}
+.subirmenos:hover{
+    transform: translateY(-4px);
+}
